@@ -48,7 +48,7 @@ const workerConfig: WorkerConfig = {
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
       responseKeyword: 'success',
       // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
-      responseForbiddenKeyword: 'bad gateway',
+      //responseForbiddenKeyword: 'bad gateway',
       // [OPTIONAL] if specified, will call the check proxy to check the monitor, mainly for geo-specific checks
       // refer to docs https://github.com/allovend/UptimeFlare/wiki/Check-proxy-setup before setting this value
       // currently supports `worker://`, `globalping://` and `http(s)://` proxies
