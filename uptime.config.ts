@@ -23,7 +23,7 @@ const workerConfig: WorkerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'openlist_hf_space',
       // `name` is used at status page and callback message
-      name: 'DefendsVIP OpenList Huggingface Space',
+      name: 'Defendsvip OpenList Huggingface Space',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
@@ -41,18 +41,18 @@ const workerConfig: WorkerConfig = {
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
-        //Authorization: 'Bearer YOUR_TOKEN_HERE',
+        Authorization: 'Bearer YOUR_TOKEN_HERE',
       },
       // [OPTIONAL] body to be sent
-      //body: 'Hello, world!',
+      body: 'Hello, world!',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      //responseKeyword: 'success',
+      responseKeyword: 'success',
       // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
-      //responseForbiddenKeyword: 'bad gateway',
+      responseForbiddenKeyword: 'bad gateway',
       // [OPTIONAL] if specified, will call the check proxy to check the monitor, mainly for geo-specific checks
       // refer to docs https://github.com/allovend/UptimeFlare/wiki/Check-proxy-setup before setting this value
       // currently supports `worker://`, `globalping://` and `http(s)://` proxies
-      //checkProxy: 'https://xxx.example.com OR worker://weur',
+      checkProxy: 'https://xxx.example.com OR worker://weur',
       // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
       checkProxyFallback: true,
     },
